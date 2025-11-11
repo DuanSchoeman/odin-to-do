@@ -13,11 +13,8 @@
                 <button class="add-group-btn">+</button>
             </div>
             <div class="group-section-content">
-                <div class="group-dummy">
+                <div class="group">
                     Personal
-                </div>
-                <div class="group-dummy">
-                    Test
                 </div>
             </div>
         </div>
@@ -45,6 +42,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay hidden">
+        <div class="modal-content">
+            <form class="reminder-form">
+                <h2>New Reminder</h2>
+
+                <label for="reminder-title-input">Title:</label>
+                <input type="text" id="reminder-title-input" required>
+
+                <label for="reminder-description-input">Description:</label>
+                <textarea id="reminder-description-input" rows="3"></textarea>
+
+                <label for="reminder-date-input">Due Date:</label>
+                <input type="date" id="reminder-date-input" required>
+
+                <label for="reminder-priority-input">Priority:</label>
+                <select id="reminder-priority-input">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="reminder-notes-input">Notes:</label>
+                <textarea id="reminder-notes-input" rows="2"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Create</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
